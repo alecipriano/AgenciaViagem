@@ -372,6 +372,15 @@ footer {
    padding: 10px 0;
 }
 
+footer p a {
+   margin: 0;
+   font-size: 14px;
+   color: #ccc;
+   text-decoration: none;
+   transition: color 0.3s ease;
+   font-weight: bolder;
+}
+
 
 /* Ajustes para a disposição das seções */
 .cabeçalho, .container-form {
