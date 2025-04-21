@@ -1,0 +1,512 @@
+body {
+   margin: 0;
+   padding: 0;
+   background-color: #000;
+   font-family: Arial, sans-serif;
+}
+
+main {
+   background-color: #fff;
+   width: 100%;  
+   max-width: 930px; 
+   margin: 30px auto;
+   padding: 0;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   border-radius: 8px;
+   overflow: hidden;
+}
+
+.cabeçalho, .container-form {
+   width: 100%;
+   margin: 0;
+}
+
+.container-form {
+   background-image: url('../img/rio.jpg');
+   background-size: cover;
+   background-position: center;
+   padding: 20px;
+   box-sizing: border-box;
+}
+
+header h1 {
+   display: flex;
+   align-items: center;
+   color: #3c184e;
+   background-color: #fff;
+   font-size: 26px;
+   gap: 10px;
+   padding: 1px 10px;
+   border-radius: 6px;
+}
+
+.logo {
+   height: 30px;
+   width: auto;
+}
+
+.box-orcamento {
+   background-color: #3c184e;
+   color: #fff;
+   padding: 10px 10px;
+   display: flex;
+   align-items: center;
+   margin: 0 7px;
+   border-radius: 8px 8px 0px 0px;
+   font-size: 17px;
+   max-width: 851px;
+}
+
+.icone-aviao {
+   height: 24px;
+   width: auto;
+   margin-right: 7px;
+}
+
+.form-wrapper {
+   background-color: #fff;
+   padding: 20px;
+   border-radius: 0px 0px 8px 8px;
+   width: 100%;
+   max-width: 830px;
+   margin: 0 7px;
+   border: 1px solid #ccc;
+}
+
+.form-wrapper form {
+   width: 100%;
+}
+
+.titulo-formulario {
+   color: #3c184e;
+   font-size: 1.5rem;
+   margin-bottom: 15px;
+}
+
+form label {
+   display: block;
+   margin-top: 15px;
+   color: #3c184e;
+   font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+   width: 100%;
+   padding: 8px;
+   margin-top: 5px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+}
+
+.linha {
+   display: flex;
+   gap: 20px;
+   margin-top: 15px;
+   flex-wrap: wrap;
+}
+
+.campo {
+   flex: 1;
+   min-width: 280px;
+}
+
+.radio-group, .checkbox-group {
+   margin-top: 10px;
+   display: flex;
+   gap: 15px;
+   flex-wrap: wrap;
+}
+
+.radio-group label,
+.checkbox-group label {
+   font-weight: normal;
+   color: #3c184e;
+}
+
+button {
+   background-color: #3c184e;
+   color: #fff;
+   padding: 12px 24px;
+   font-size: 1rem;
+   font-weight: bold;
+   border: none;
+   border-radius: 6px;
+   cursor: pointer;
+   transition: background-color 0.3s ease, transform 0.2s ease;
+   margin-top: 20px;
+   display: block;
+}
+
+button:hover {
+   background-color: #532568;
+   transform: scale(1.02);
+}
+
+button:active {
+   background-color: #2a0f39;
+   transform: scale(0.98);
+}
+
+/* ofertas */
+.ofertas {
+   padding: 20px 20px;
+   background-color: #f8f8f8;
+}
+
+.ofertas h3 {
+   font-size: 35px;
+   color: #3c184e;
+   margin-bottom: 0px;
+   text-align: left;
+}
+
+.ofertas p {
+   font-size: 1.2rem;
+   margin: 7px 0px 17px 0px;
+   text-align: left;
+}
+
+.ofertas p span {
+   color: #e63946;
+   font-weight: bold;
+}
+
+.ofertas > div {
+   display: flex;
+   gap: 20px;
+   justify-content: flex-start;
+   flex-wrap: wrap;
+}
+
+.ofertas > div > div:first-child {
+   flex: 1;
+   min-width: 300px;
+}
+
+.ofertas > div > div:first-child img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 8px;
+}
+
+.ofertas > div > div:last-child {
+   flex: 1;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 10px;
+   min-width: 300px;
+}
+
+.ofertas > div > div:last-child img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 8px;
+}
+
+.ofertas-container {
+   display: flex;
+   gap: 20px;
+   flex-wrap: wrap;
+}
+
+.ofertas-container > .imagem-box {
+   flex: 1;
+   min-width: 300px;
+}
+
+.galeria-pequena {
+   flex: 1;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 10px;
+   min-width: 300px;
+}
+
+.imagem-box {
+   position: relative;
+   width: 100%;
+   height: 100%;
+}
+
+.imagem-box img {
+   width: 100%;
+   height: auto;
+   display: block;
+   border-radius: 8px;
+}
+
+.legenda {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   background: rgba(0, 0, 0, 0.6);
+   color: #fff;
+   padding: 6px 10px;
+   font-size: 14px;
+   border-radius: 0 0 8px 8px;
+   box-sizing: border-box;
+}
+
+/* destaques */
+.destaques {
+   padding: 20px 20px 40px;
+   background-color: #f1f1f1;
+   border-top: 1px solid #ccc;
+}
+
+.destaques h3 {
+   font-size: 35px;
+   color: #3c184e;
+   margin-bottom: 0px;
+   text-align: left;
+}
+
+.destaques p {
+   font-size: 17px;
+   margin: 7px 0px 17px 0px;
+   text-align: left;
+   color: gray;
+}
+
+.destaques {
+   display: flex;
+   flex-direction: column;
+}
+
+.destaques-imgs {
+   display: flex;
+   gap: 20px;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   padding: 10px 0px 60px 0px;
+}
+
+.destaques-imgs > div {
+   flex: 1;
+   min-width: 300px;
+}
+
+.destaques-imgs img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 8px;
+   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.destaque-texto {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   border: 1px solid #3c184e;
+   border-radius: 10px;  
+   margin-bottom: 17px;  
+}
+
+.destaque-texto span {
+   color: #3c184e;
+   font-weight: bold;
+   font-size: 17px;
+   margin-bottom: 10px;
+   padding: 17px 0px 0px 17px;
+}
+
+.destaque-texto p {
+   font-size: 15px;
+   margin: 0 17px 17px 17px;
+   color: gray;
+}
+
+/* rodapé */
+.rodapé {
+   display: flex;
+   justify-content: space-between;
+   padding: 40px 20px;
+   background-color: #3c184e;
+   color: #fff;
+}
+
+.contato {
+   display: flex;
+   flex-direction: column;
+   text-align: left;
+   margin: 0 0 5px 0;
+}
+
+.contato p {
+   margin: 4px 4px;
+}
+
+.redes-sociais {
+   display: flex;
+   flex-direction: column;
+   align-items: right;
+}
+
+.redes-sociais a {
+   display: inline-block;
+   text-decoration: none;
+   margin: 4px 4px;
+   color: #fff;
+}
+
+.redes-sociais img {
+   width: 21px;
+   height: 21px;
+   margin: 1px 17px 0px 0px;
+   transition: transform 0.3s ease;
+}
+
+footer {
+   background-color: #222;
+   color: #fff;
+   text-align: center;
+   padding: 10px 0;
+}
+
+
+/* Ajustes para a disposição das seções */
+.cabeçalho, .container-form {
+   display: block; /* Garante que fiquem uma embaixo da outra */
+}
+
+/* Responsividade */
+
+@media (max-width: 480px) {
+   * {
+      box-sizing: border-box;
+   }
+
+   body, html {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+   }
+
+   main {
+      width: 100%;
+      padding: 0 10px; 
+      margin: 0 auto;
+   }
+
+   header h1 {
+      font-size: 20px;
+      flex-direction: column;
+      text-align: center;
+      word-break: break-word;
+   }
+
+   .logo {
+      height: 24px;
+      max-width: 100%;
+   }
+
+   .box-orcamento span {
+      font-size: 15px;
+   }
+
+   .titulo-formulario {
+      font-size: 1.2rem;
+      text-align: center;
+   }
+
+   .linha {
+      flex-direction: column;
+   }
+
+   button {
+      width: 100%;
+      font-size: 0.9rem;
+      padding: 10px;
+   }
+
+   .ofertas h3, .destaques h3 {
+      font-size: 24px;
+      text-align: center;
+      word-break: break-word;
+   }
+
+   .destaques-imgs {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .rodapé {
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+   }
+
+   .redes-sociais {
+      align-items: center;
+      flex-wrap: wrap;
+   }
+
+   img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+   }
+}
+
+@media (max-width: 768px) {
+   main {
+      width: 95%;
+      margin: 10px auto;
+   }
+
+   .ofertas-container {
+      flex-direction: column;
+   }
+
+   .galeria-pequena {
+      grid-template-columns: 1fr;
+   }
+
+   .ofertas > div > div:last-child {
+      grid-template-columns: 1fr;
+   }
+
+   .destaques-imgs {
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+   }
+}
+
+@media (max-width: 1024px) {
+   main {
+      width: 95%; 
+   }
+
+   .container-form {
+      padding: 10px; 
+   }
+
+   .form-wrapper {
+      width: 100%;
+      padding: 15px;
+      margin: 0 10px;
+   }
+
+   .linha {
+      flex-direction: column; 
+   }
+
+   .campo {
+      flex: 1;
+      min-width: 100%;
+   }
+
+   button {
+      width: 100%;
+   }
+}
